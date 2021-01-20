@@ -20,12 +20,7 @@ import sphinx_rtd_theme  # type: ignore[import]
 
 from sphinx.application import Sphinx
 
-from chizuru import (
-    __author__,
-    __gh_repository_link__,
-    __project__,
-    __version__,
-)
+from chizuru import __author__, __gh_repository_link__, __project__, __version__
 
 
 needs_sphinx = "3.1"  #: Minimum Sphinx version to build the docs
