@@ -11,7 +11,7 @@
 |                   +---------------------------------------------------------------------------------------------+
 |                   | |gha_code_quality| |pre-commit-ci| |codeclimate_maintain|                                   |
 |                   +---------------------------------------------------------------------------------------------+
-|                   | |gha_test_docs| |gha_dep_safety| |dependabot|                                               |
+|                   | |gha_test_docs| |gha_dep_safety|                                                            |
 +-------------------+---------------------------------------------------------------------------------------------+
 | **Github**        | |gh_release| |gh_commits_since| |gh_last_commit|                                            |
 |                   +---------------------------------------------------------------------------------------------+
@@ -101,6 +101,8 @@
 .. |gha_dep_safety| image:: https://img.shields.io/github/workflow/status/Cielquan/chizuru/Dependency%20safety/master?style=flat-square&logo=github&label=Dependency%20safety
     :target: https://github.com/Cielquan/chizuru/actions?query=workflow%3A%22Dependency+safety%22
     :alt: GitHub Actions - Dependency safety
+
+.. TODO:#i# readd dependabot badge when https://github.com/dependabot/dependabot-core/issues/1912 is fixed
 
 .. |dependabot| image:: https://api.dependabot.com/badges/status?host=github&repo=Cielquan/chizuru
     :target: https://dependabot.com
