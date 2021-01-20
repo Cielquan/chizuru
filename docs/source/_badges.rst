@@ -9,7 +9,7 @@
 +-------------------+---------------------------------------------------------------------------------------------+
 | **Pipeline**      | |gha_test_code| |codeclimate_cov|                                                           |
 |                   +---------------------------------------------------------------------------------------------+
-|                   | |gha_code_quality| |pre-commit-ci| |codeclimate_maintain|                                   |
+|                   | |gha_code_quality| |codeclimate_maintain|                                                   |
 |                   +---------------------------------------------------------------------------------------------+
 |                   | |gha_test_docs| |gha_dep_safety|                                                            |
 +-------------------+---------------------------------------------------------------------------------------------+
@@ -33,7 +33,7 @@
     :alt: Maintenance - intended
 
 .. |license| image:: https://img.shields.io/github/license/Cielquan/chizuru.svg?style=flat-square&label=License
-    :target: https://github.com/Cielquan/chizuru/blob/master/LICENSE
+    :target: https://github.com/Cielquan/chizuru/blob/main/LICENSE
     :alt: License
 
 .. |rtd| image:: https://img.shields.io/readthedocs/chizuru/latest.svg?style=flat-square&logo=read-the-docs&logoColor=white&label=Read%20the%20Docs
@@ -74,7 +74,7 @@
 
 .. Pipeline
 
-.. |gha_test_code| image:: https://img.shields.io/github/workflow/status/Cielquan/chizuru/Test%20code/master?style=flat-square&logo=github&label=Test%20code
+.. |gha_test_code| image:: https://img.shields.io/github/workflow/status/Cielquan/chizuru/Test%20code/main?style=flat-square&logo=github&label=Test%20code
     :target: https://github.com/Cielquan/chizuru/actions?query=workflow%3A%22Test+code%22
     :alt: GitHub Actions - Test code
 
@@ -82,23 +82,19 @@
     :target: https://codeclimate.com/github/Cielquan/chizuru
     :alt: Code Climate - Coverage
 
-.. |gha_code_quality| image:: https://img.shields.io/github/workflow/status/Cielquan/chizuru/Code%20qualitiy/master?style=flat-square&logo=github&label=Code%20qualitiy
+.. |gha_code_quality| image:: https://img.shields.io/github/workflow/status/Cielquan/chizuru/Code%20qualitiy/main?style=flat-square&logo=github&label=Code%20qualitiy
     :target: https://github.com/Cielquan/chizuru/actions?query=workflow%3A%22Code+qualitiy%22
     :alt: GitHub Actions - Code qualitiy
-
-.. |pre-commit-ci| image:: https://results.pre-commit.ci/badge/github/Cielquan/chizuru/master.svg
-   :target: https://results.pre-commit.ci/latest/github/Cielquan/chizuru/master
-   :alt: pre-commit.ci status
 
 .. |codeclimate_maintain| image:: https://img.shields.io/codeclimate/maintainability/Cielquan/chizuru?style=flat-square&logo=code-climate
     :target: https://codeclimate.com/github/Cielquan/chizuru
     :alt: Code Climate - Maintainability
 
-.. |gha_test_docs| image:: https://img.shields.io/github/workflow/status/Cielquan/chizuru/Test%20documentation/master?style=flat-square&logo=github&label=Test%20documentation
+.. |gha_test_docs| image:: https://img.shields.io/github/workflow/status/Cielquan/chizuru/Test%20documentation/main?style=flat-square&logo=github&label=Test%20documentation
     :target: https://github.com/Cielquan/chizuru/actions?query=workflow%3A%22Test+documentation%22
     :alt: GitHub Actions - Test docs
 
-.. |gha_dep_safety| image:: https://img.shields.io/github/workflow/status/Cielquan/chizuru/Dependency%20safety/master?style=flat-square&logo=github&label=Dependency%20safety
+.. |gha_dep_safety| image:: https://img.shields.io/github/workflow/status/Cielquan/chizuru/Dependency%20safety/main?style=flat-square&logo=github&label=Dependency%20safety
     :target: https://github.com/Cielquan/chizuru/actions?query=workflow%3A%22Dependency+safety%22
     :alt: GitHub Actions - Dependency safety
 
@@ -116,11 +112,11 @@
     :alt: Github - Latest Release
 
 .. |gh_commits_since| image:: https://img.shields.io/github/commits-since/Cielquan/chizuru/latest.svg?style=flat-square&logo=github
-    :target: https://github.com/Cielquan/chizuru/commits/master
+    :target: https://github.com/Cielquan/chizuru/commits/main
     :alt: GitHub - Commits since latest release
 
 .. |gh_last_commit| image:: https://img.shields.io/github/last-commit/Cielquan/chizuru.svg?style=flat-square&logo=github
-    :target: https://github.com/Cielquan/chizuru/commits/master
+    :target: https://github.com/Cielquan/chizuru/commits/main
     :alt: GitHub - Last Commit
 
 .. |gh_stars| image:: https://img.shields.io/github/stars/Cielquan/chizuru.svg?style=flat-square&logo=github

@@ -13,7 +13,7 @@ chizuru
 +-------------------+---------------------------------------------------------------------------------------------+
 | **Pipeline**      | |gha_test_code| |codeclimate_cov|                                                           |
 |                   +---------------------------------------------------------------------------------------------+
-|                   | |gha_code_quality| |pre-commit-ci| |codeclimate_maintain|                                   |
+|                   | |gha_code_quality| |codeclimate_maintain|                                                   |
 |                   +---------------------------------------------------------------------------------------------+
 |                   | |gha_test_docs| |gha_dep_safety|                                                            |
 +-------------------+---------------------------------------------------------------------------------------------+
@@ -95,10 +95,6 @@ Privacy preserving voice assistant
 .. |gha_code_quality| image:: https://img.shields.io/github/workflow/status/Cielquan/chizuru/Code%20qualitiy/master?style=flat-square&logo=github&label=Code%20qualitiy
     :target: https://github.com/Cielquan/chizuru/actions?query=workflow%3A%22Code+qualitiy%22
     :alt: GitHub Actions - Code qualitiy
-
-.. |pre-commit-ci| image:: https://results.pre-commit.ci/badge/github/Cielquan/chizuru/master.svg
-   :target: https://results.pre-commit.ci/latest/github/Cielquan/chizuru/master
-   :alt: pre-commit.ci status
 
 .. |codeclimate_maintain| image:: https://img.shields.io/codeclimate/maintainability/Cielquan/chizuru?style=flat-square&logo=code-climate
     :target: https://codeclimate.com/github/Cielquan/chizuru

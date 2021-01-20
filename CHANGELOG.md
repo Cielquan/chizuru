@@ -16,6 +16,6 @@ For a list of all available releases see the
 
 
 ## Unreleased
-[commits](https://github.com/Cielquan/chizuru/commits/master)
+[commits](https://github.com/Cielquan/chizuru/commits/main)
 
 - Intital release
