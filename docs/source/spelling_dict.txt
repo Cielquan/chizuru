@@ -1,3 +1,5 @@
+api
+changelog
 chizuru
 cielquan
 compat
@@ -22,6 +24,8 @@ py
 redef
 repo
 riedel
+rst
+sdist
 tokenize
 txt
 venv
