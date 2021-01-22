@@ -38,7 +38,7 @@
 
     [tool.poetry.urls]
         "Issue Tracker" = "https://github.com/Cielquan/chizuru/issues"
-        "Changelog" = "https://github.com/Cielquan/chizuru/blob/master/README.rst"
+        "Changelog" = "https://github.com/Cielquan/chizuru/blob/main/README.rst"
         "Documentation" = "https://chizuru.readthedocs.io"
         "Source" = "https://github.com/Cielquan/chizuru"
 
