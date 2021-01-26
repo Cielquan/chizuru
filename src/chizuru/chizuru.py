@@ -1,4 +1,3 @@
-# noqa: D205,D208,D400
 """
     chizuru.chizuru
     ~~~~~~~~~~~~~~~
