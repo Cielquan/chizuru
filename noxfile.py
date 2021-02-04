@@ -8,6 +8,7 @@
     :license: GPL-3.0-or-later, see LICENSE for details
 """  # noqa: D205,D208,D400
 import contextlib
+import locale
 import os
 import re
 import subprocess  # noqa: S404
@@ -15,15 +16,95 @@ import sys
 
 from importlib.util import find_spec
 from pathlib import Path
-from typing import Any, Callable, Dict, List, Optional
+from typing import (
+    IO,
+    Any,
+    Callable,
+    Dict,
+    List,
+    Mapping,
+    Optional,
+    Sequence,
+    Tuple,
+    Union,
+)
 
 import nox
+import nox.command
 import tomlkit  # type: ignore[import]
 
 from formelsammlung.nox_session import Session, session_w_poetry
 from formelsammlung.venv_utils import get_venv_bin_dir, get_venv_path, get_venv_tmp_dir
 from nox.command import CommandFailed
 from nox.logger import logger as nox_logger
+
+
+# TODO:#i# remove temporary fix for nox
+# https://github.com/theacodes/nox/pull/380
+def patched_popen(
+    args: Sequence[str],
+    env: Mapping[str, str] = None,
+    silent: bool = False,
+    stdout: Union[int, IO] = None,
+    stderr: Union[int, IO] = subprocess.STDOUT,
+) -> Tuple[int, str]:
+    """Patch nox popen function to fix windows decode errors."""
+    if silent and stdout is not None:
+        raise ValueError(
+            "Can not specify silent and stdout; passing a custom stdout "
+            "always silences the commands output in Nox's log."
+        )
+
+    if silent:
+        stdout = subprocess.PIPE
+
+    proc = subprocess.Popen(args, env=env, stdout=stdout, stderr=stderr)  # noqa: S603
+
+    try:
+        out, _ = proc.communicate()
+        sys.stdout.flush()
+
+    except KeyboardInterrupt:
+        proc.terminate()
+        proc.wait()
+        raise
+
+    return_code = proc.wait()
+
+    return return_code, decode_output(out) if out else ""
+
+
+def decode_output(output: bytes) -> str:
+    """Try to decode the given bytes with encodings from the system.
+
+    :param output: output to decode
+    :raises UnicodeDecodeError: if all encodings fail
+    :return: decoded string
+    """
+    decoded_output = ""
+    encodings = {
+        "utf8",
+        sys.stdout.encoding or "utf8",
+        sys.getdefaultencoding() or "utf8",
+        locale.getpreferredencoding() or "utf8",
+    }
+
+    for idx, encoding in enumerate(encodings):
+        try:
+            print(encoding)
+            decoded_output = output.decode(encoding)
+        except UnicodeDecodeError as exc:
+            if idx + 1 < len(encodings):
+                continue
+            exc.encoding = str(encodings).replace("'", "")
+            raise
+        else:
+            break
+
+    return decoded_output
+
+
+nox.command.popen = patched_popen
 
 
 #: -- NOX OPTIONS ----------------------------------------------------------------------
