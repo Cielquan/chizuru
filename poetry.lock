@@ -497,7 +497,7 @@ cognitive_complexity = "*"
 
 [[package]]
 name = "flake8-comprehensions"
-version = "3.3.1"
+version = "3.5.0"
 description = "A flake8 plugin to help you write better list/set/dict comprehensions."
 category = "main"
 optional = true
@@ -1930,7 +1930,7 @@ twine = ["twine"]
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.6.2"
-content-hash = "c33f5edbbbb20282ea92d8dcb44977deff76bbd4e1af102fc38ff0d379a51a9f"
+content-hash = "b5dee457704f1c640d2455ec5a9483ab431b3c6339c9c0351c72121ea91cb9b8"
 
 [metadata.files]
 alabaster = [
@@ -2200,8 +2200,8 @@ flake8-cognitive-complexity = [
     {file = "flake8_cognitive_complexity-0.1.0.tar.gz", hash = "sha256:f202df054e4f6ff182b659c261922b9c684628a47beb19cb0973c50d6a7831c1"},
 ]
 flake8-comprehensions = [
-    {file = "flake8-comprehensions-3.3.1.tar.gz", hash = "sha256:e734bf03806bb562886d9bf635d23a65a1a995c251b67d7e007a7b608af9bd22"},
-    {file = "flake8_comprehensions-3.3.1-py3-none-any.whl", hash = "sha256:6d80dfafda0d85633f88ea5bc7de949485f71f1e28db7af7719563fe5f62dcb1"},
+    {file = "flake8-comprehensions-3.5.0.tar.gz", hash = "sha256:f24be9032587127f7a5bc6d066bf755b6e66834f694383adb8a673e229c1f559"},
+    {file = "flake8_comprehensions-3.5.0-py3-none-any.whl", hash = "sha256:b07aef3277623db32310aa241a1cec67212b53c1d18e767d7e26d4d83aa05bf7"},
 ]
 flake8-docstrings = [
     {file = "flake8-docstrings-1.5.0.tar.gz", hash = "sha256:3d5a31c7ec6b7367ea6506a87ec293b94a0a46c0bce2bb4975b7f1d09b6f3717"},
